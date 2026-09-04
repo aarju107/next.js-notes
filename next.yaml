@@ -8,3 +8,39 @@ bata fethcing
 styling
 optimization
 dev and prod build system
+react server components is a new architecture that allows you to build modern web applications with improved performance and scalability. It enables server-side rendering of React components, allowing for faster initial page loads and better SEO. With React Server Components, you can fetch data on the server and send only the necessary HTML to the client, reducing the amount of JavaScript that needs to be executed in the browser. This leads to a more efficient and responsive user experience.
+by default, Next.js supports React Server Components, allowing developers to take advantage of this architecture in their applications. This means that you can build components that run on the server, while still being able to use client-side interactivity when needed. This hybrid approach allows for a seamless user experience, as the initial load is fast and subsequent interactions can be handled on the client side. Overall, React Server Components in Next.js provide a powerful toolset for building modern web applications with improved performance and scalability.
+to create a client component in Next.js, you can use the `use client` directive at the top of your component file. This tells Next.js that the component should be rendered on the client side, allowing for interactivity and state management. Client components can still fetch data from APIs or other sources, but they will be executed in the browser rather than on the server. This is useful for components that require user interaction or dynamic updates based on user input. By combining server and client components, you can create a seamless and efficient user experience in your Next.js applications.
+
+
+//routing
+next.js has a file system based routing system, which means that the structure of your files and folders in the `pages` directory determines the routes of your application. Each file in the `pages` directory corresponds to a route based on its file name and path. For example, a file named `about.js` in the `pages` directory will be accessible at `/about`, while a file named `blog/[id].js` will create a dynamic route that can handle different blog post IDs.
+This file-based routing system makes it easy to create and manage routes in your application without the need
+  for additional configuration. You can also create nested routes by organizing your files into subdirectories within the `pages` directory. For example, a file located at `pages/blog/post.js` will be accessible at `/blog/post`. Additionally, Next.js supports dynamic routing using square brackets in file names, allowing you to create routes that can accept parameters. Overall, the file-based routing system in Next.js simplifies the process of defining and managing routes in your application.
+   
+
+   // routing conventions
+   Next.js follows certain conventions for routing that help developers create clean and organized routes. Here are
+  some of the key routing conventions in Next.js:
+
+
+    // file based routing contd
+    // nested routing 
+    // dynamic routing
+    // nested dynamic routing
+
+
+
+--> catch-all segments
+// one for fetureid and one for conceptid
+(example: pages/feature/[featureId]/concept/[conceptId].js will create a route that can handle different feature and concept IDs, accessible at /feature/:featureId/concept/:conceptId)
+
+
+// 404 page - default 404 page is provided by next.js, but you can create a custom 404 page by creating a file named `404.js` in the `pages` directory. This allows you to customize the appearance and content of the 404 error page for your application.
+n
+
+// Private folders- keep you project organized and maintainable by grouping related files together. For example, you can create a `components` folder to store all your reusable components, a `styles` folder for your CSS or styling files, and a `utils` folder for utility functions. This helps improve code readability and makes it easier to navigate your project structure.
+underscore use karte hai for private folders, which means that any folder or file that starts with an underscore (_) will be treated as a private folder or file and will not be accessible as a route in your application. This is useful for organizing your code and keeping certain files or folders hidden from public access. For example, you can create a `_components` folder to store your reusable components, and they will not be accessible as routes in your application. This helps maintain a clean and organized project structure while still allowing you to use these private files and folders in your application.
+
+// route groups - route groups are a way to organize your routes in Next.js by grouping related routes together. This can help improve the structure and maintainability of your application, especially as it grows in size and complexity. By using route groups, you can create a clear hierarchy of routes and make it easier to manage and navigate your application's routing system.
+ For example, you can group all the routes related to a specific feature or section of your application into a single route group, making it easier to understand the relationships between different routes and their associated components. Overall, route groups provide a powerful tool for organizing and managing your application's routing system in Next.js.
